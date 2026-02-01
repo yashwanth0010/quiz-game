@@ -21,8 +21,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: Dockerfile
+          context: ./source_code
+          file: ./source_code/Dockerfile
           push: true
           tags: |
             yash0010/quiz_app:frontend-latest
